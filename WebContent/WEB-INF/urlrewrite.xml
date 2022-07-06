@@ -1,0 +1,13 @@
+<urlrewrite>
+
+    <rule>
+	    <from>/web</from>
+	    <to type="redirect">%{context-path}/index.html</to>
+    </rule>
+
+    <rule>
+	    <from>^/google/(.*)$</from>
+	    <to type="redirect">https://google.com/search?q=$1</to>
+    </rule>
+
+</urlrewrite>
